@@ -1,6 +1,7 @@
 require './idea'
 
 class IdeaBoxApp < Sinatra::Base
+  set :method_override, true
   not_found do 
     erb :error
   end
@@ -17,6 +18,11 @@ class IdeaBoxApp < Sinatra::Base
     idea.save
     
     # 3. Send us back to the index page to see all ideas
+    redirect '/'
+  end
+
+  delete '/:id' do |id|
+    Idea.delete(id.to_i)
     redirect '/'
   end
 end
