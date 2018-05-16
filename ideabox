@@ -1,4 +1,8 @@
 ---
 ideas:
-- :title: diet
-  :description: eat pizza all of the time!
+- !ruby/hash:Sinatra::IndifferentHash
+  title: dinner
+  description: tacos
+- !ruby/hash:Sinatra::IndifferentHash
+  title: lunch
+  description: sausage
