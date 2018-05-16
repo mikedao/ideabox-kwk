@@ -1,5 +1,8 @@
 ---
 ideas:
-- !ruby/hash:Sinatra::IndifferentHash
-  title: diet
+- title: diet
   description: eat pizza always
+  rank: 1
+- title: thirsty
+  description: scotch!
+  rank: 2
